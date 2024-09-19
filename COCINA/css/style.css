@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin: 0; padding: 0;}
+
+body {background-image:url("../IMG/reposteria fondo.avif"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'; cursor:url("../IMG/palaBIEN.png"), auto;}
+
+.wrapper {background-color: rgba(244,216,194,0.62); width: 1000px; margin-right: auto; margin-left: auto; text-align: center; padding: 30px; box-sizing: border-box; }
+
+
+.footer {background-color: white; width: 1000px; height: 50px; color: saddlebrown; line-height: 50px; margin-right: auto; margin-left: auto; text-align: center; }
+
+.nav {background-color: white; width: 1000px; height: 250px; color: saddlebrown; text-align: center; margin-right: auto; margin-left: auto; }
+
+.nav ul{list-style-type: none;}
+
+.nav li {width: 200px; float: left; }
+
+.section {background-color: floralwhite; width: 700px; padding: 70px; margin-top: 50px; margin-bottom: 50px; margin-left: auto; margin-right: auto;}
+
+.section img{height:250px; width:auto}
+
+.section p {text-align: justify; color:#2D1908;}
+
+h2 {color: #94410F;font-family:"Playwrite CL";}
+t-face{src:url("../src/LilitaOne-Regular.ttf"); font-family: reposteriafont;}
+/* Font face permite colocar fuentes de fantasia y font family es para asignarle un nombre*/
+
+a {text-decoration: none; color: saddlebrown}
+a:hover {color: #D76BC9}
+
+/*posision relativa sigue el flujo de la pagina, el que nbos da por default
+la posicion fija es la queposiciona los elementos a partir de nuestro navegador, sale del flujo normal de la pagina y se posiciona de acuerdo a la pantALLA DEL NAVEGADOR 
+la posicion absoluta ignora el parrafo y sale del flujo normal de la pagina tambien, solo que la absoluta no se queda fija*/
+
+.boton {position: fixed; left: 1200px; top: 300px}
+.uno {position:relative; right:300px; bottom: 700px;}
+
+
+/* transformaciones*
+la linear no tiene sensibilizacion o sea que la velocidad es constante
+ease in dice que inicia la transformacion lentamente y termina a toda velocidad
+rotate gira en su eje, rotate y skew se manejan en grados
+ease out inicia la transformacion a toda velocidad y termina lentamente
+SE PUEDEN COMBINAAR COMO rotate y scale, tranformacion de translate en pixeles
+*/
+.uno:hover {transform:translateX(50px); transition:ease-out 5s;}
+
+.dos {position:relative; left:300px; bottom: 570px;}
+.dos:hover {transform:rotate(360deg); transition:ease-out 5s;}
+
+.tres {position:relative; right:300px; bottom: 500px;}
+.tres:hover {transform:skewX(360deg); transition:ease-out 5s;}
+
+.cuatro {position:relative; left:300px; bottom: 610px;}
+.cuatro:hover {transform:rotate(360deg); transition:ease-out 5s;}
+
+.cinco {position:relative; rigth:200px; bottom: 30px;}
+.cinco:hover {transform:translateX(50px); transition:ease-out 10s;}
